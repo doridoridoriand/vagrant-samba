@@ -1,0 +1,11 @@
+---
+
+- name: Check if the data directory exists
+  stat:
+    path: /usr/local/samba
+  register: samba_data_directory_path
+
+- name: Install samba
+  apt: name=samba state=present
+  when: samba_data_directory_path.stat.exists
+  become: yes
