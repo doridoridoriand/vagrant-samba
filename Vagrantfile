@@ -11,4 +11,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provision 'shell', path: './provision/init.sh'
+  config.vm.provision 'ansible' do |ansible|
+    ansible.playbook = './provision/main.yml'
+  end
 end
