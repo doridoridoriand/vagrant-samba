@@ -1,11 +1,11 @@
 # Samba on Vagrant
 
-# Dependencies
+## Dependencies
 - Virtualbox (>= 5.2)
 - Vagrant (>= 2.0.3)
 - Ansible (>=1.9.1)
 
-# Installation & Run
+## Installation & Run
 ```
 $ cd $HOME
 $ git clone https://github.com/doridoridoriand/vagrant-samba.git
